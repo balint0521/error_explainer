@@ -1,0 +1,44 @@
+{
+  "name": "error-explainer",
+  "displayName": "Error Explainer",
+  "description": "Explains programming errors in plain English using AI – perfect for beginners.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["error", "debug", "ai", "beginner", "explain", "groq"],
+  "activationEvents": [
+    "onCommand:error-explainer.explain"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "error-explainer.explain",
+        "title": "Explain Error",
+        "category": "Error Explainer"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "error-explainer.explain",
+          "group": "navigation",
+          "when": "editorHasSelection"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Error Explainer",
+      "properties": {
+        "errorExplainer.groqApiKey": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Your Groq API key. Get a free key at [console.groq.com](https://console.groq.com).",
+          "scope": "application"
+        }
+      }
+    }
+  }
+}
