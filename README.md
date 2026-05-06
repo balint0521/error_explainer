@@ -19,7 +19,7 @@ Illessz be egy hibaüzenetet (és opcionálisan a kódodat), és a bővítmény 
 Nyiss egy terminált, és ellenőrizd a verziót:
 
 ```bash
-python3 --version
+python(3) --version
 ```
 
 Ha nem látod a verziót, töltsd le a [python.org](https://www.python.org/downloads/) weboldalról.
@@ -27,7 +27,7 @@ Ha nem látod a verziót, töltsd le a [python.org](https://www.python.org/downl
 **Második lépés – Telepítsd a Groq Python csomagot**
 
 ```bash
-python3 -m pip install groq --user
+python(3) -m pip install groq --user
 ```
 
 **Harmadik lépés – Szerezz egy ingyenes Groq API kulcsot**
@@ -49,7 +49,7 @@ Kattints a zöld **Code** gombra, majd a **Download ZIP** lehetőségre, és cso
 
 **Hatodik lépés – Indítsd el a bővítményt**
 
-Nyomd meg az **F5** billentyűt. Ekkor megnyílik egy második VS Code ablak, ahol a bővítmény futni fog.
+Nyomd meg az **(fn +) F5** billentyűt. Ekkor megnyílik egy második VS Code ablak, ahol a bővítmény futni fog.
 
 **Hetedik lépés – Add meg a Groq API kulcsodat**
 
@@ -74,7 +74,7 @@ A második VS Code ablakban:
 
 Néhány másodpercen belül megkapod az érthető magyarázatot.
 
-> **Megjegyzés:** Minden alkalommal, amikor használni szeretnéd a bővítményt, ismételd meg a hatodik lépést – nyomj F5-öt a második ablak megnyitásához.
+> **Megjegyzés:** Minden alkalommal, amikor használni szeretnéd a bővítményt, ismételd meg a hatodik lépést – nyomj (fn +) F5-öt a második ablak megnyitásához.
 
 ---
 
